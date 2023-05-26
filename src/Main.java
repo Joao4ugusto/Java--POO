@@ -30,7 +30,10 @@ public class Main {
         lost.setMinutosPorEpisodio(50);
 
         System.out.println("*************************");
+        System.out.println("Nome da Serie: " + lost.getNome());
+        System.out.println("Ano de Lançamento: " + lost.getAnoDeLancamento());
         System.out.println("Duração para maratonar Lost: " + lost.getDuracaoEmMinutos());
+
 
     }
 }
