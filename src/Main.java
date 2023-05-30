@@ -1,4 +1,5 @@
 import br.com.alura.screematch.calculos.CalculadoraDeTempo;
+import br.com.alura.screematch.calculos.Recomendacoes;
 import br.com.alura.screematch.modelos.Filme;
 import br.com.alura.screematch.modelos.Serie;
 
@@ -48,5 +49,11 @@ public class Main {
         calculadora.inclui(naruto);
         calculadora.inclui(lost);
         System.out.println("Tempo que ficarei assistindo: " + calculadora.getTempoTotal());
+
+        System.out.println("**********************");
+        Recomendacoes filtro = new Recomendacoes();
+        filtro.filtra(meuFilme);
+
     }
+
 }
