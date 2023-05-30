@@ -1,3 +1,4 @@
+import br.com.alura.screematch.calculos.CalculadoraDeTempo;
 import br.com.alura.screematch.modelos.Filme;
 import br.com.alura.screematch.modelos.Serie;
 
@@ -34,6 +35,10 @@ public class Main {
         System.out.println("Ano de Lançamento: " + lost.getAnoDeLancamento());
         System.out.println("Duração para maratonar Lost: " + lost.getDuracaoEmMinutos());
 
+        System.out.println("******************************");
+        CalculadoraDeTempo calculadora = new CalculadoraDeTempo();
 
+        calculadora.inclui(meuFilme);
+        System.out.println(calculadora.getTempoTotal());
     }
 }
