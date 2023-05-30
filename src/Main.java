@@ -46,7 +46,7 @@ public class Main {
 
         calculadora.inclui(meuFilme);
         calculadora.inclui(naruto);
-        System.out.println("Primeiro filme: " + calculadora.getTempoTotal());
-        System.out.println("Segundo Filme: " + calculadora.getTempoTotal());
+        calculadora.inclui(lost);
+        System.out.println("Tempo que ficarei assistindo: " + calculadora.getTempoTotal());
     }
 }
