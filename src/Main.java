@@ -35,10 +35,18 @@ public class Main {
         System.out.println("Ano de Lançamento: " + lost.getAnoDeLancamento());
         System.out.println("Duração para maratonar Lost: " + lost.getDuracaoEmMinutos());
 
+        Filme naruto = new Filme();
+        naruto.setNome("Avatar");
+        naruto.setAnoDeLancamento(2023);
+        naruto.setDuracaoEmMinutos(250);
+
+
         System.out.println("******************************");
         CalculadoraDeTempo calculadora = new CalculadoraDeTempo();
 
         calculadora.inclui(meuFilme);
-        System.out.println(calculadora.getTempoTotal());
+        calculadora.inclui(naruto);
+        System.out.println("Primeiro filme: " + calculadora.getTempoTotal());
+        System.out.println("Segundo Filme: " + calculadora.getTempoTotal());
     }
 }
