@@ -50,5 +50,11 @@ public class Principal {
         episodio.setSerie(lost);
         episodio.setTotalVisualizacoes(300);
         filtro.filtra(episodio);
+
+        Filme filmeDoJoao = new Filme();
+        filmeDoJoao.setDuracaoEmMinutos(200);
+        filmeDoJoao.setNome("Boruto");
+        filmeDoJoao.setAnoDeLancamento(2018);
+
     }
 }
