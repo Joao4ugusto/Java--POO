@@ -1,19 +1,19 @@
 package br.com.alura.screematch.modelos;
 
-import br.com.alura.screematch.calculos.Classificavel;
+import br.com.alura.screenmatch.calculos.Classificavel;
 
 public class Episodio implements Classificavel {
     private int numero;
     private String nome;
     private Serie serie;
-    private int totalVizu;
+    private int totalVisualizacoes;
 
-    public int getTotalVizu() {
-        return totalVizu;
+    public int getTotalVisualizacoes() {
+        return totalVisualizacoes;
     }
 
-    public void setTotalVizu(int totalVizu) {
-        this.totalVizu = totalVizu;
+    public void setTotalVisualizacoes(int totalVisualizacoes) {
+        this.totalVisualizacoes = totalVisualizacoes;
     }
 
     public int getNumero() {
@@ -42,7 +42,7 @@ public class Episodio implements Classificavel {
 
     @Override
     public int getClassificacao() {
-        if(totalVizu >= 100){
+        if (totalVisualizacoes > 100) {
             return 4;
         } else {
             return 2;

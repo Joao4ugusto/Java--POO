@@ -4,7 +4,7 @@ import br.com.alura.screematch.modelos.Episodio;
 import br.com.alura.screematch.modelos.Filme;
 import br.com.alura.screematch.modelos.Serie;
 
-public class Main {
+public class Principal {
     public static void main(String[] args) {
         Filme meuFilme = new Filme();
         meuFilme.setNome("Poderoso chefão");
